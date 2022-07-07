@@ -1,6 +1,3 @@
-body {
-    margin: 1rem;
-}
 
 .header-container {
     display: flex;
@@ -9,16 +6,60 @@ body {
 }
 
 h1 {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 700;
-    font-size: clamp(4rem, 2vw, 6rem); 
+    font-family: Heebo, sans-serif;
+    font-size: 8vw; 
+}
+
+h2 {
+    margin: 0%;
 }
 
 .menu-button {
     position: absolute;
-    top: 3rem;
-    right: 3rem;
+    top: 0.6rem;
+    right: 0.3rem;
     background-color: transparent;
     border:none;
     cursor: pointer;
+}
+
+
+.title{
+    font-weight: bold;
+    font-family: Heebo, sans-serif;
+    font-size: 6.25vw; 
+}
+
+.stories-section {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    scroll-behavior: auto;
+    overflow-x: scroll;
+}
+
+.stories-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: start;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.story-container {
+    border: 0.25rem solid blueviolet;
+    margin: 2.5px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    list-style-type: none;
+}
+
+.story-cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
