@@ -7,15 +7,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
         <title>Jefinho Reviews</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width initial-scale=1"" >
+        <meta name="viewport" content="width=device-width initial-scale=1" >
     </head>
     <body>
         <header>
             <div id="header-container" class="header-container">
-                <h1 id="headet-title" class="header-title">Jefinho Reviews</h1>
-                <button id="menu-button" class="menu-button">
-                    <img src="images/menu.svg" alt="Icone de Menu" class="menu-icon" width="30" height="30">
-                </button>
+                <a href="/" id="home-link">
+                    <h1 id="headet-title" class="header-title">Jefinho Reviews</h1>
+                </a>
+                <nav id="nav">
+                    <ul id="nav-list" class="nav-list" role="nav-list">
+                        <li class="nav-item"><a href="pages/destaques.html" class="nav-link">Destaques</a></li>
+                        <li class="nav-item"><a href="pages/promocoes.html" class="nav-link">Promoções</a></li>
+                        <li class="nav-item"><a href="pages/selecionados.html" class="nav-link">Selecionados</a></li>
+                        <li class="nav-item"><a href="pages/celulares.html" class="nav-link">Celulares</a></li>
+                        <li class="nav-item"><a href="pages/loja.html" class="nav-link">Loja</a></li>
+                        <li class="nav-item"><a href="pages/ajuda.html" class="nav-link">Ajuda</a></li>
+                    </ul>
+                    <button id="btn-menu" class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-expanded="false" aria-controls="nav-list">
+                        <span id="btn-menu-line" class="btn-menu-line"></span>
+                    </button>
+                </nav>
+                
             </div>        
         </header>
         <main>
@@ -25,7 +38,7 @@
             <section id="stories-section" class="stories-section">
                     <ul id="stories-container" class="stories-container">
                         <li id="story-container" class="story-container">
-                            <img id="celular image" class="story-cover" src="images/celular.jpg" alt="Story cover image" width="200" height="2o0"> 
+                            <img id="celular image" class="story-cover" src="images/celular.jpg" alt="Story cover image" width="200" height="200"> 
                         </li>
                         <li id="story-container-1" class="story-container"></li>
                         <li id="story-container-2" class="story-container"></li>
@@ -35,4 +48,5 @@
             </section>
         </main>
     </body>
+    <script src="/js/index.js"></script>
 </html>
