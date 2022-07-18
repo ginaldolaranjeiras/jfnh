@@ -33,9 +33,30 @@ h1 {
 }
 
 h2 {
+    font-size: 1.8rem; 
+    font-weight: bold;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+h3 {
     margin: 0%;
     color: #525255;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
+
+.category-title{ 
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+    background-color: #7864F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 p {
     color: #525255;
