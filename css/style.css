@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    scrollbar-width: 0;
 }
 
 body, ul {
     font-family: Heebo, sans-serif;
     list-style-type: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 section{
@@ -151,7 +154,7 @@ p {
     }
 
     .btn-menu-line {
-        border-top: 1.5px solid;
+        border-top: 2px solid;
         width: 25px;
         gap: .5rem;
         color: #000;
@@ -257,4 +260,35 @@ address {
    flex-direction: column;
    align-items: center;
    text-decoration: none;
+}
+
+
+/* Slider */
+
+.slider-container {
+    margin: 0.5rem;
+    height: 30vh;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+
+}
+.slider-item {
+    flex: none;
+    scroll-snap-align: start;
+}
+
+.slider-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 390px) {
+    .slider-container {
+        height: 40vh;
+    }
 }
