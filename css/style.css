@@ -1,6 +1,9 @@
-body, ul {
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+}
+
+body, ul {
     font-family: Heebo, sans-serif;
     list-style-type: none;
 }
