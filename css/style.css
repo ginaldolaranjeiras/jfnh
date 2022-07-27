@@ -1,14 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    scrollbar-width: 0;
 }
 
 body, ul {
     font-family: Heebo, sans-serif;
     list-style-type: none;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 section{
