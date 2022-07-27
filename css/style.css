@@ -8,6 +8,7 @@ body, ul {
     font-family: Heebo, sans-serif;
     list-style-type: none;
     overflow-x: hidden;
+    background-color: #EBE7E7;
 }
 
 section{
@@ -40,7 +41,7 @@ h1 {
 h2 {
     font-size: 1.8rem; 
     font-weight: bold;
-    color: aliceblue;
+    color: #EBE7E7;
     font-weight: bold;
 }
 
@@ -110,7 +111,7 @@ p {
     #nav-list {
         margin-top: 1rem;
         visibility: hidden;
-        background: #fff;
+        background: #EBE7E7;
         display: block;
         position: absolute;
         width: 100%;
