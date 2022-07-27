@@ -13,6 +13,7 @@ img {
     width: auto;
     height: 100vh;
     display: block;
+    object-fit: cover;
 }
 
 .slide {
