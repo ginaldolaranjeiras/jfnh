@@ -8,7 +8,10 @@ body {
 }
 
 img {
-    max-width: 100%;
+    margin: auto;
+    padding: 0;
+    width: auto;
+    height: 100vh;
     display: block;
 }
 
