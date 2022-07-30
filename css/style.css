@@ -269,6 +269,7 @@ address {
     margin: 0.5rem;
     height: 30vh;
     display: flex;
+    overflow-y: hidden;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
