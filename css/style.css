@@ -7,12 +7,11 @@
 body, ul {
     font-family: Heebo, sans-serif;
     list-style-type: none;
-    overflow-x: hidden;
     background-color: #EBE7E7;
 }
 
-section{
-    margin-bottom: 1.5rem;
+section:not([class="stories-section"]) {
+    margin: 0.5rem;
 }
 
 /* Header Style */
@@ -47,7 +46,7 @@ h2 {
 
 
 h3 {
-    margin: 0%;
+    padding-top: 1rem;
     color: #525255;
     font-size: 1.7rem;
     font-weight: bold;
@@ -59,8 +58,8 @@ h3 {
     height: 5rem;
     background-color: #7864F0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
 }
 
 
@@ -202,14 +201,13 @@ p {
     display: flex;
     height: 100px;
     width: 100%;
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
     overflow-x: scroll;
 }
 
 .stories-container {
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
     justify-content: start;
     padding: 0%;
 }
@@ -217,7 +215,7 @@ p {
 
 .story-container {
     border: 0.25rem solid blueviolet;
-    margin: 2.5px;
+    margin: 0 0.25rem;
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -238,9 +236,17 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 30vh;
     padding: 1rem;
     align-items: center;
+    margin-bottom: 5rem;
+}
+
+footer hr {
+    width: 100%;
+    border: 0.5px solid #525255;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .social-buttons {
@@ -259,14 +265,13 @@ address {
    display: flex;
    flex-direction: column;
    align-items: center;
-   text-decoration: none;
 }
+
 
 
 /* Slider */
 
 .slider-container {
-    margin: 0.5rem;
     height: 30vh;
     display: flex;
     overflow-y: hidden;
@@ -292,4 +297,67 @@ address {
     .slider-container {
         height: 40vh;
     }
+}
+
+/* Promotion Section */
+
+.purple-bg {
+    height: 100vh;
+    background-color: #7864F0;
+}
+
+.purple-bg h3 {
+    color: #EBE7E7;
+}
+
+
+
+/* Last Posts */
+
+.last-posts-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.last-posts-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.last-post-cover{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.last-post-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: justify;
+    color: #525255;
+}
+
+.last-post-text {
+    text-align: justify;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: "...";
+}
+.category-post-prev-tag {
+    border-radius: 5px;
+    border: 1.8px solid #7864F0;
+    width: fit-content;
+    padding: 0px 0.5rem;
+}
+
+.category-post-prev-tag a {
+    color: #7864F0;
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: bold;
+    align-items: center;
+    align-content: center;
 }
