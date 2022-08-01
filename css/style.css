@@ -42,6 +42,9 @@ h2 {
     font-weight: bold;
     color: #EBE7E7;
     font-weight: bold;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -58,8 +61,8 @@ h3 {
     height: 5rem;
     background-color: #7864F0;
     display: flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -194,7 +197,6 @@ p {
 .title{
     font-weight: bold;
     font-size: 1.2rem;
-    margin: 0 1rem;
 }
 
 .stories-section {
@@ -308,6 +310,7 @@ address {
 
 .purple-bg h3 {
     color: #EBE7E7;
+    padding-left: 0.5rem;
 }
 
 
