@@ -22,25 +22,26 @@ section:not([class="stories-section"]) {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    height: 5rem;
+    height: 10vh;
+    background: #7864F0;
 }
 
 a {
     text-decoration: none;
-    color: #525255;
+    color: #EBE7E7;
     cursor: pointer;
 }
 
 h1 {
     font-size: 1.8rem; 
     font-weight: bold;
-    color: #525255;
+    color: #EBE7E7;
 }
 
 h2 {
     font-size: 1.8rem; 
     font-weight: bold;
-    color: #EBE7E7;
+    color:#7864F0;
     font-weight: bold;
     justify-items: center;
     align-items: center;
@@ -59,7 +60,7 @@ h3 {
     margin: 0;
     padding: 0;
     height: 5rem;
-    background-color: #7864F0;
+    background-color: #EBE7E7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,6 +91,7 @@ p {
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+    background: #7864F0;
     
 }
 
@@ -111,19 +113,18 @@ p {
 @media (max-width: 768px) {
 
     #nav-list {
-        margin-top: 1rem;
         visibility: hidden;
-        background: #EBE7E7;
+        background: #7864F0;
         display: block;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 65px;
         right: 0;
         z-index: 100;
         width: 0px;
         transition: 0.6s;
         overflow-x: hidden;
-        height: calc(100vh - 70px);
+        height: 100%;
         align-items: center;
         justify-content: center;
     }
@@ -137,6 +138,7 @@ p {
         font-size: 1.5rem;
         text-align: center;
         text-justify: center;
+        color: #EBE7E7;
     }
 
 
@@ -159,7 +161,7 @@ p {
         border-top: 2px solid;
         width: 25px;
         gap: .5rem;
-        color: #000;
+        color: #EBE7E7;
     }
 
  
@@ -216,7 +218,7 @@ p {
 
 
 .story-container {
-    border: 0.25rem solid blueviolet;
+    border: 3.2px solid #7864F0;
     margin: 0 0.25rem;
     width: 75px;
     height: 75px;
@@ -228,6 +230,7 @@ p {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    border: 1px solid #EBE7E7;
 }
 
 
@@ -244,11 +247,16 @@ footer {
     margin-bottom: 5rem;
 }
 
+footer h1, footer p, footer a {
+    color: #525255;
+}
+
 footer hr {
     width: 100%;
     border: 0.5px solid #525255;
     margin-bottom: 3rem;
     margin-top: 3rem;
+    opacity: 50%;
 }
 
 .social-buttons {
@@ -267,6 +275,7 @@ address {
    display: flex;
    flex-direction: column;
    align-items: center;
+   color: #7864F0;
 }
 
 
@@ -330,14 +339,14 @@ address {
 }
 
 .last-post-cover{
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border-radius: 10px;
 }
 
 .last-post-title {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     text-align: justify;
     color: #525255;
@@ -353,14 +362,20 @@ address {
     border-radius: 5px;
     border: 1.8px solid #7864F0;
     width: fit-content;
-    padding: 0px 0.5rem;
 }
 
 .category-post-prev-tag a {
     color: #7864F0;
-    text-decoration: none;
-    font-size: 0.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-post-prev-tag a span {
+    font-size: 0.60em;
     font-weight: bold;
     align-items: center;
     align-content: center;
+    padding: 0px 0.30rem;
 }
