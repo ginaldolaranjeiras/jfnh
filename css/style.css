@@ -390,6 +390,10 @@ address {
 
 /* Promotion Section*/
 
+#promotions-section {
+    height: min-content;
+}
+
 .portrait-container {
     display: flex;
     margin: 0.5rem;
@@ -448,6 +452,7 @@ address {
     width: 100%;
     justify-content: right;
     align-items: baseline;
+    cursor: pointer;
 }
 
 .see-more-link a {
