@@ -50,7 +50,7 @@ h2 {
 
 
 h3 {
-    padding-top: 1rem;
+    padding: 0.5rem 0;
     color: #525255;
     font-size: 1.7rem;
     font-weight: bold;
@@ -199,6 +199,14 @@ p {
 .title{
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+#story-title {
+    display: flex;
+    justify-content: left;
+    padding-left: .5rem;
+    background-color: #EBE7E7;
+    margin-bottom: -1rem;
 }
 
 .stories-section {
