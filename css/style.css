@@ -553,8 +553,9 @@ address {
 }
 
 #subscribe-title {
-    margin-top: 1.5rem;
-    font-size: 1.5em;
+    display: flex;
+    margin-top: 1.5rem 4rem;
+    font-size: 1.8em;
     font-weight: bold;
     color: #EBE7E7;
 }
@@ -573,8 +574,17 @@ address {
     margin: 1rem 0;
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+    width: 100%;
+}
 
 .form-group input {
+    width: 80%;
     height: 40px;
     border-radius: 10px;
     border: 1px solid #7864F0;
@@ -589,4 +599,5 @@ address {
     border: 1px solid #7864F0;
     font-weight: bold;
     background-color: #F5B715;
+    margin-top: 1rem;
 }
