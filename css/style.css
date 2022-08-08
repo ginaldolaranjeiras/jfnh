@@ -193,6 +193,10 @@ p {
     }
 }
 
+#principal-section {
+    margin: 0;
+}
+
 
 /* Stories Section */
 
@@ -204,9 +208,9 @@ p {
 #story-title {
     display: flex;
     justify-content: left;
-    padding-left: .5rem;
     background-color: #EBE7E7;
-    margin-bottom: -1rem;
+    margin-bottom: -.5rem;
+    margin-left: .5rem;
 }
 
 .stories-section {
